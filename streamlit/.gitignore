@@ -1,0 +1,9 @@
+*.csv
+*.zip
+
+*.log
+
+dev
+
+__pycache__
+

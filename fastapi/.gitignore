@@ -1,0 +1,19 @@
+# venv
+dev
+
+# caches
+__pycache__
+
+# environment
+# fastapi/app/.env is filled with your own and untracked
+.env
+.env.*
+!.env.example
+!.env.local.example
+!.env.docker-compose.example
+
+# untrack user custom application (it is tracked in their own repo), track example custom application
+*_app
+!custom_app
+
+Dockerfile
