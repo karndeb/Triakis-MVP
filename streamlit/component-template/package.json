@@ -1,0 +1,16 @@
+{
+  "name": "component-template",
+  "version": "1.0.0",
+  "description": "Collection of components for streamlit",
+  "main": "index.js",
+  "scripts": {
+  },
+  "keywords": [],
+  "author": "",
+  "workspaces": [
+    "./streamlit-antv/*/*",
+    "./streamlit-vite/*/*",
+    "./streamlit-xui/*/*"
+  ],
+  "license": "ISC"
+}
