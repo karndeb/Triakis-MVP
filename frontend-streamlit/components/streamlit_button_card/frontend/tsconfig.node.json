@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "module": "esnext",
+    "moduleResolution": "node"
+  },
+  "include": ["streamlit_button_card/frontend/vite.config.ts"]
+}

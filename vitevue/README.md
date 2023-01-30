@@ -1,1 +1,0 @@
-Vite + VueJS is now maintained in a seperate repository [https://github.com/ais-one/cookbook/tree/master/js-web/vue-vite](https://github.com/ais-one/cookbook/tree/master/js-web/vue-vite).

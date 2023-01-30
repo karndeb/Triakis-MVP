@@ -1,0 +1,201 @@
+Invoice Numbers,Dispute ID,Dispute Reason,Dispute Category,Reconciliation Status,Due Days Remaining,Payment Status,Payment Reference
+1,200,Incorrect Rates,Contractual rate not applied,TRUE,1,Paid,AB123
+2,199,Incorrect Rates,Container rolled by carrier,TRUE,2,Paid,AB234
+3,198,Incorrect Rates,Agreed free time not applied,TRUE,3,Unpaid,AB334
+4,197,Incorrect Rates,Charged due to delay by carrier,FALSE,4,Paid,AB123
+5,196,Already Paid,Duplicate Invoice,FALSE,5,Paid,AB234
+6,195,Already Paid,Payment made to vendor,TRUE,6,Unpaid,AB334
+7,194,Already Paid,Payment made to terminal,TRUE,7,Paid,AB123
+8,193,Incorrect Payer,NA,TRUE,8,Paid,AB234
+9,192,Missing Information,Time of Departure/Arrival,FALSE,9,Unpaid,AB334
+10,191,Missing Information,Place of receipt/destination,FALSE,10,Paid,AB123
+11,190,Missing Information,Reference Number Missing,TRUE,1,Paid,AB234
+12,189,Missing Information,Container number missing,TRUE,2,Unpaid,AB334
+13,188,Missing Information,Share more invioce details,TRUE,3,Paid,AB123
+14,187,Incorrect Rates,Contractual rate not applied,FALSE,4,Paid,AB234
+15,186,Incorrect Rates,Container rolled by carrier,FALSE,5,Unpaid,AB334
+16,185,Incorrect Rates,Agreed free time not applied,TRUE,6,Paid,AB123
+17,184,Incorrect Rates,Charged due to delay by carrier,TRUE,7,Paid,AB234
+18,183,Already Paid,Duplicate Invoice,TRUE,8,Unpaid,AB334
+19,182,Already Paid,Payment made to vendor,FALSE,9,Paid,AB123
+20,181,Already Paid,Payment made to terminal,FALSE,10,Paid,AB234
+21,180,Incorrect Payer,NA,TRUE,1,Unpaid,AB334
+22,179,Missing Information,Time of Departure/Arrival,TRUE,1,Paid,AB123
+23,178,Missing Information,Place of receipt/destination,TRUE,1,Paid,AB234
+24,177,Missing Information,Reference Number Missing,FALSE,1,Unpaid,AB334
+25,176,Missing Information,Container number missing,FALSE,1,Paid,AB123
+26,175,Missing Information,Share more invioce details,TRUE,1,Paid,AB234
+27,174,Incorrect Rates,Contractual rate not applied,TRUE,1,Unpaid,AB334
+28,173,Incorrect Rates,Container rolled by carrier,TRUE,1,Paid,AB123
+29,172,Incorrect Rates,Agreed free time not applied,FALSE,1,Paid,AB234
+30,171,Incorrect Rates,Charged due to delay by carrier,FALSE,1,Unpaid,AB334
+31,170,Already Paid,Duplicate Invoice,TRUE,2,Paid,AB123
+32,169,Already Paid,Payment made to vendor,TRUE,3,Paid,AB234
+33,168,Already Paid,Payment made to terminal,TRUE,4,Unpaid,AB334
+34,167,Incorrect Payer,NA,FALSE,5,Paid,AB123
+35,166,Missing Information,Time of Departure/Arrival,FALSE,6,Paid,AB234
+36,165,Missing Information,Place of receipt/destination,TRUE,7,Unpaid,AB334
+37,164,Missing Information,Reference Number Missing,TRUE,8,Paid,AB123
+38,163,Missing Information,Container number missing,TRUE,9,Paid,AB234
+39,162,Missing Information,Share more invioce details,FALSE,10,Unpaid,AB334
+40,161,Incorrect Rates,Contractual rate not applied,FALSE,11,Paid,AB123
+41,160,Incorrect Rates,Container rolled by carrier,TRUE,12,Paid,AB234
+42,159,Incorrect Rates,Agreed free time not applied,TRUE,13,Unpaid,AB334
+43,158,Incorrect Rates,Charged due to delay by carrier,TRUE,14,Paid,AB123
+44,157,Already Paid,Duplicate Invoice,FALSE,15,Paid,AB234
+45,156,Already Paid,Payment made to vendor,FALSE,16,Unpaid,AB334
+46,155,Already Paid,Payment made to terminal,TRUE,17,Paid,AB123
+47,154,Incorrect Payer,NA,TRUE,18,Paid,AB234
+48,153,Missing Information,Time of Departure/Arrival,TRUE,19,Unpaid,AB334
+49,152,Missing Information,Place of receipt/destination,FALSE,20,Paid,AB123
+50,151,Missing Information,Reference Number Missing,FALSE,21,Paid,AB234
+51,150,Missing Information,Container number missing,TRUE,22,Unpaid,AB334
+52,149,Missing Information,Share more invioce details,TRUE,23,Paid,AB123
+53,148,Incorrect Rates,Contractual rate not applied,TRUE,24,Paid,AB234
+54,147,Incorrect Rates,Container rolled by carrier,FALSE,25,Unpaid,AB334
+55,146,Incorrect Rates,Agreed free time not applied,FALSE,26,Paid,AB123
+56,145,Incorrect Rates,Charged due to delay by carrier,TRUE,27,Paid,AB234
+57,144,Already Paid,Duplicate Invoice,TRUE,28,Unpaid,AB334
+58,143,Already Paid,Payment made to vendor,TRUE,29,Paid,AB123
+59,142,Already Paid,Payment made to terminal,FALSE,30,Paid,AB234
+60,141,Incorrect Payer,NA,FALSE,31,Unpaid,AB334
+61,140,Missing Information,Time of Departure/Arrival,TRUE,32,Paid,AB123
+62,139,Missing Information,Place of receipt/destination,TRUE,33,Paid,AB234
+63,138,Missing Information,Reference Number Missing,TRUE,34,Unpaid,AB334
+64,137,Missing Information,Container number missing,FALSE,35,Paid,AB123
+65,136,Missing Information,Share more invioce details,FALSE,36,Paid,AB234
+66,135,Incorrect Rates,Contractual rate not applied,TRUE,37,Unpaid,AB334
+67,134,Incorrect Rates,Container rolled by carrier,TRUE,38,Paid,AB123
+68,133,Incorrect Rates,Agreed free time not applied,TRUE,39,Paid,AB234
+69,132,Incorrect Rates,Charged due to delay by carrier,FALSE,40,Unpaid,AB334
+70,131,Already Paid,Duplicate Invoice,FALSE,41,Paid,AB123
+71,130,Already Paid,Payment made to vendor,TRUE,42,Paid,AB234
+72,129,Already Paid,Payment made to terminal,TRUE,43,Unpaid,AB334
+73,128,Incorrect Payer,NA,TRUE,44,Paid,AB123
+74,127,Missing Information,Time of Departure/Arrival,FALSE,45,Paid,AB234
+75,126,Missing Information,Place of receipt/destination,FALSE,46,Unpaid,AB334
+76,125,Missing Information,Reference Number Missing,TRUE,47,Paid,AB123
+77,124,Missing Information,Container number missing,TRUE,48,Paid,AB234
+78,123,Missing Information,Share more invioce details,TRUE,49,Unpaid,AB334
+79,122,Incorrect Rates,Contractual rate not applied,FALSE,50,Paid,AB123
+80,121,Incorrect Rates,Container rolled by carrier,FALSE,51,Paid,AB234
+81,120,Incorrect Rates,Agreed free time not applied,TRUE,52,Unpaid,AB334
+82,119,Incorrect Rates,Charged due to delay by carrier,TRUE,53,Paid,AB123
+83,118,Already Paid,Duplicate Invoice,TRUE,20,Paid,AB234
+84,117,Already Paid,Payment made to vendor,FALSE,21,Unpaid,AB334
+85,116,Already Paid,Payment made to terminal,FALSE,22,Paid,AB123
+86,115,Incorrect Payer,NA,TRUE,23,Paid,AB234
+87,114,Missing Information,Time of Departure/Arrival,TRUE,24,Unpaid,AB334
+88,113,Missing Information,Place of receipt/destination,TRUE,25,Paid,AB123
+89,112,Missing Information,Reference Number Missing,FALSE,26,Paid,AB234
+90,111,Missing Information,Container number missing,FALSE,27,Unpaid,AB334
+91,110,Missing Information,Share more invioce details,TRUE,28,Paid,AB123
+92,109,Incorrect Rates,Contractual rate not applied,TRUE,29,Paid,AB234
+93,108,Incorrect Rates,Container rolled by carrier,TRUE,30,Unpaid,AB334
+94,107,Incorrect Rates,Agreed free time not applied,FALSE,31,Paid,AB123
+95,106,Incorrect Rates,Charged due to delay by carrier,FALSE,32,Paid,AB234
+96,105,Already Paid,Duplicate Invoice,TRUE,33,Unpaid,AB334
+97,104,Already Paid,Payment made to vendor,TRUE,34,Paid,AB123
+98,103,Already Paid,Payment made to terminal,TRUE,35,Paid,AB234
+99,102,Incorrect Payer,NA,FALSE,36,Unpaid,AB334
+100,101,Missing Information,Time of Departure/Arrival,FALSE,37,Paid,AB123
+101,100,Missing Information,Place of receipt/destination,TRUE,38,Paid,AB234
+102,99,Missing Information,Reference Number Missing,TRUE,39,Unpaid,AB334
+103,98,Missing Information,Container number missing,TRUE,40,Paid,AB123
+104,97,Missing Information,Share more invioce details,FALSE,41,Paid,AB234
+105,96,Incorrect Rates,Contractual rate not applied,FALSE,42,Unpaid,AB334
+106,95,Incorrect Rates,Container rolled by carrier,TRUE,43,Paid,AB123
+107,94,Incorrect Rates,Agreed free time not applied,TRUE,44,Paid,AB234
+108,93,Incorrect Rates,Charged due to delay by carrier,TRUE,45,Unpaid,AB334
+109,92,Already Paid,Duplicate Invoice,FALSE,46,Paid,AB123
+110,91,Already Paid,Payment made to vendor,FALSE,47,Paid,AB234
+111,90,Already Paid,Payment made to terminal,TRUE,48,Unpaid,AB334
+112,89,Incorrect Payer,NA,TRUE,49,Paid,AB123
+113,88,Missing Information,Time of Departure/Arrival,TRUE,50,Paid,AB234
+114,87,Missing Information,Place of receipt/destination,FALSE,51,Unpaid,AB334
+115,86,Missing Information,Reference Number Missing,FALSE,52,Paid,AB123
+116,85,Missing Information,Container number missing,TRUE,53,Paid,AB234
+117,84,Missing Information,Share more invioce details,TRUE,54,Unpaid,AB334
+118,83,Incorrect Rates,Contractual rate not applied,TRUE,55,Paid,AB123
+119,82,Incorrect Rates,Container rolled by carrier,FALSE,56,Paid,AB234
+120,81,Incorrect Rates,Agreed free time not applied,FALSE,57,Unpaid,AB334
+121,80,Incorrect Rates,Charged due to delay by carrier,TRUE,58,Paid,AB123
+122,79,Already Paid,Duplicate Invoice,TRUE,59,Paid,AB234
+123,78,Already Paid,Payment made to vendor,TRUE,60,Unpaid,AB334
+124,77,Already Paid,Payment made to terminal,FALSE,61,Paid,AB123
+125,76,Incorrect Payer,NA,FALSE,62,Paid,AB234
+126,75,Missing Information,Time of Departure/Arrival,TRUE,63,Unpaid,AB334
+127,74,Missing Information,Place of receipt/destination,TRUE,64,Paid,AB123
+128,73,Missing Information,Reference Number Missing,TRUE,65,Paid,AB234
+129,72,Missing Information,Container number missing,FALSE,66,Unpaid,AB334
+130,71,Missing Information,Share more invioce details,FALSE,67,Paid,AB123
+131,70,Incorrect Rates,Contractual rate not applied,TRUE,68,Paid,AB234
+132,69,Incorrect Rates,Container rolled by carrier,TRUE,69,Unpaid,AB334
+133,68,Incorrect Rates,Agreed free time not applied,TRUE,70,Paid,AB123
+134,67,Incorrect Rates,Charged due to delay by carrier,FALSE,71,Paid,AB234
+135,66,Already Paid,Duplicate Invoice,FALSE,72,Unpaid,AB334
+136,65,Already Paid,Payment made to vendor,TRUE,73,Paid,AB123
+137,64,Already Paid,Payment made to terminal,TRUE,74,Paid,AB234
+138,63,Incorrect Payer,NA,TRUE,75,Unpaid,AB334
+139,62,Missing Information,Time of Departure/Arrival,FALSE,76,Paid,AB123
+140,61,Missing Information,Place of receipt/destination,FALSE,77,Paid,AB234
+141,60,Missing Information,Reference Number Missing,TRUE,78,Unpaid,AB334
+142,59,Missing Information,Container number missing,TRUE,79,Paid,AB123
+143,58,Missing Information,Share more invioce details,TRUE,80,Paid,AB234
+144,57,Incorrect Rates,Contractual rate not applied,FALSE,81,Unpaid,AB334
+145,56,Incorrect Rates,Container rolled by carrier,FALSE,82,Paid,AB123
+146,55,Incorrect Rates,Agreed free time not applied,TRUE,83,Paid,AB234
+147,54,Incorrect Rates,Charged due to delay by carrier,TRUE,84,Unpaid,AB334
+148,53,Already Paid,Duplicate Invoice,TRUE,85,Paid,AB123
+149,52,Already Paid,Payment made to vendor,FALSE,86,Paid,AB234
+150,51,Already Paid,Payment made to terminal,FALSE,87,Unpaid,AB334
+151,50,Incorrect Payer,NA,TRUE,88,Paid,AB123
+152,49,Missing Information,Time of Departure/Arrival,TRUE,89,Paid,AB234
+153,48,Missing Information,Place of receipt/destination,TRUE,90,Unpaid,AB334
+154,47,Missing Information,Reference Number Missing,FALSE,91,Paid,AB123
+155,46,Missing Information,Container number missing,FALSE,92,Paid,AB234
+156,45,Missing Information,Share more invioce details,TRUE,93,Unpaid,AB334
+157,44,Incorrect Rates,Contractual rate not applied,TRUE,94,Paid,AB123
+158,43,Incorrect Rates,Container rolled by carrier,TRUE,95,Paid,AB234
+159,42,Incorrect Rates,Agreed free time not applied,FALSE,96,Unpaid,AB334
+160,41,Incorrect Rates,Charged due to delay by carrier,FALSE,97,Paid,AB123
+161,40,Already Paid,Duplicate Invoice,TRUE,98,Paid,AB234
+162,39,Already Paid,Payment made to vendor,TRUE,99,Unpaid,AB334
+163,38,Already Paid,Payment made to terminal,TRUE,100,Paid,AB123
+164,37,Incorrect Payer,NA,FALSE,101,Paid,AB234
+165,36,Missing Information,Time of Departure/Arrival,FALSE,102,Unpaid,AB334
+166,35,Missing Information,Place of receipt/destination,TRUE,103,Paid,AB123
+167,34,Missing Information,Reference Number Missing,TRUE,104,Paid,AB234
+168,33,Missing Information,Container number missing,TRUE,105,Unpaid,AB334
+169,32,Missing Information,Share more invioce details,FALSE,106,Paid,AB123
+170,31,Incorrect Rates,Contractual rate not applied,FALSE,107,Paid,AB234
+171,30,Incorrect Rates,Container rolled by carrier,TRUE,108,Unpaid,AB334
+172,29,Incorrect Rates,Agreed free time not applied,TRUE,109,Paid,AB123
+173,28,Incorrect Rates,Charged due to delay by carrier,TRUE,110,Paid,AB234
+174,27,Already Paid,Duplicate Invoice,FALSE,111,Unpaid,AB334
+175,26,Already Paid,Payment made to vendor,FALSE,112,Paid,AB123
+176,25,Already Paid,Payment made to terminal,TRUE,113,Paid,AB234
+177,24,Incorrect Payer,NA,TRUE,114,Unpaid,AB334
+178,23,Missing Information,Time of Departure/Arrival,TRUE,115,Paid,AB123
+179,22,Missing Information,Place of receipt/destination,FALSE,116,Paid,AB234
+180,21,Missing Information,Reference Number Missing,FALSE,117,Unpaid,AB334
+181,20,Missing Information,Container number missing,TRUE,118,Paid,AB123
+182,19,Missing Information,Share more invioce details,TRUE,119,Paid,AB234
+183,18,Incorrect Rates,Contractual rate not applied,TRUE,120,Unpaid,AB334
+184,17,Incorrect Rates,Container rolled by carrier,FALSE,121,Paid,AB123
+185,16,Incorrect Rates,Agreed free time not applied,FALSE,122,Paid,AB234
+186,15,Incorrect Rates,Charged due to delay by carrier,TRUE,123,Unpaid,AB334
+187,14,Already Paid,Duplicate Invoice,TRUE,124,Paid,AB123
+188,13,Already Paid,Payment made to vendor,TRUE,125,Paid,AB234
+189,12,Already Paid,Payment made to terminal,FALSE,126,Unpaid,AB334
+190,11,Incorrect Payer,NA,FALSE,127,Paid,AB123
+191,10,Missing Information,Time of Departure/Arrival,TRUE,128,Paid,AB234
+192,9,Missing Information,Place of receipt/destination,TRUE,129,Unpaid,AB334
+193,8,Missing Information,Reference Number Missing,TRUE,130,Paid,AB123
+194,7,Missing Information,Container number missing,FALSE,131,Paid,AB234
+195,6,Missing Information,Share more invioce details,FALSE,132,Unpaid,AB334
+196,5,Incorrect Rates,Contractual rate not applied,TRUE,133,Paid,AB123
+197,4,Incorrect Rates,Container rolled by carrier,TRUE,134,Paid,AB234
+198,3,Incorrect Rates,Agreed free time not applied,TRUE,135,Unpaid,AB334
+199,2,Incorrect Rates,Charged due to delay by carrier,FALSE,136,Paid,AB123
+200,1,Already Paid,Duplicate Invoice,FALSE,137,Paid,AB234
