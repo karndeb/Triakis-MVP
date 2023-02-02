@@ -2,7 +2,7 @@ import streamlit as st
 from st_on_hover_tabs import on_hover_tabs
 from views.Home import Home
 from views.Invoice_Matching import InvoiceMatching
-from views.modal_test import ModalTest
+from views.Dispute_Management import DisputeManagement
 
 
 st.set_page_config(page_title="Triakis", page_icon="assets/Favicon-Original.ico", layout="wide",
@@ -69,9 +69,9 @@ def view(model):
         InvoiceMatching().view(InvoiceMatching.Model())
         logout_widget()
 
-    # if pages == model.module3:
-    #     ModalTest().view(ModalTest.Model())
-    #     logout_widget()
+    if pages == model.module3:
+        DisputeManagement().view(DisputeManagement.Model())
+        logout_widget()
 
 
 def logout_widget():

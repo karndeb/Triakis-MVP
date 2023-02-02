@@ -2,6 +2,12 @@ from st_aggrid import AgGrid, GridOptionsBuilder
 import streamlit as st
 from pretty_notification_box import notification_box
 import base64
+import smtplib
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+from email.header import Header
+from email.mime.application import MIMEApplication
+from tools.msgtohtml_module import Msgtohtml
 
 
 def df_to_grid(df, height=None, table_id=None):
@@ -48,3 +54,27 @@ def check_payment_and_click_status():
                        "Please select an unpaid invoice")
     except (IndexError, UnboundLocalError, AttributeError):
         st.warning("No Invoice ID is selected yet")
+
+
+def send_email(sender, password, receiver, smtp_server, smtp_port, email_message, subject, attachment=None):
+    message = MIMEMultipart()
+    message['To'] = Header(receiver)
+    message['From'] = Header(sender)
+    message['Subject'] = Header(subject)
+    message.attach(MIMEText(email_message, 'plain', 'utf-8'))
+    if attachment:
+        att = MIMEApplication(attachment.read(), _subtype="txt")
+        att.add_header('Content-Disposition', 'attachment', filename=attachment.name)
+        message.attach(att)
+    server = smtplib.SMTP(smtp_server, smtp_port)
+    server.starttls()
+    server.ehlo()
+    server.login(sender, password)
+    text = message.as_string()
+    server.sendmail(sender, receiver, text)
+    server.quit()
+
+
+def msg_to_html(path):
+    html_res = Msgtohtml
+    return html_res(path).email2html()

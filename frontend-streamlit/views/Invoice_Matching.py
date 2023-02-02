@@ -16,31 +16,25 @@ class InvoiceMatching:
     class Model:
         pageTitle = "Invoice Matching"
         titleInvoiceMatching = "## Invoice Matching"
-        titleTab1 = "## Upload Files"
+        titleTab1 = "## Match Invoices"
         titleTab2 = "## Invoicing Errors"
         titleTab3 = "## Invoice Level Info"
 
     def view(self, model):
         with st.sidebar:
             st.markdown("---")
-        chosen_id = stx.tab_bar(data=[
-            stx.TabBarItemData(id=1, title="Upload Files", description="Match Invoices or Raise disputes"),
+        chosen_tab = stx.tab_bar(data=[
+            stx.TabBarItemData(id=1, title="Match Invoices", description="Match Invoices"),
             stx.TabBarItemData(id=2, title="Invoicing Errors", description="Get all the info about invoicing errors."),
             stx.TabBarItemData(id=3, title="Invoice Level Info", description="The master table at the invoice level"),
         ], default=1)
-        # Develop the first Tab
+        # Develop Tab 1
         "<------------------------------------------------------------------------------------------------------------>"
-        if chosen_id == '1':
-            val = stx.stepper_bar(steps=["step 1", "step 2", "step 3", "step 4", "step 5"])
+        if chosen_tab == '1':
+            val = stx.stepper_bar(steps=["step 1", "step 2", "step 3"])
             if val == 0:
-                st.info(f" In step 1, choose whether you want to match invoice or raise a dispute")
-                ## Todo
-                st.button("Match Invoice")
-                st.button("Dispute Shipment")
-            if val == 1:
-                st.info(f" In step 2, you need to select what you pay for "
+                st.info(f" In step 1, you need to select what you pay for "
                         f"(Select any additional charges you want to pay for)")
-                ## Todo
                 option = st.selectbox('Select the INCOTerms',
                                       ('Dont know', 'Ex Works (EXW)', 'Free Carrier (FCA)', 'Free Alongside Ship (FAS)',
                                        'Free On Board (FOB)', 'Cost and Freight (CFR)',
@@ -49,25 +43,23 @@ class InvoiceMatching:
                                        'Delivered At Place Unloaded (DPU)', 'Delivered Duty Paid (DDP)'))
 
                 st.write('You selected:', option)
-            if val == 2:
-                st.info(f" In step 3, you need to upload the files that you match or dispute")
                 ## Todo
+            if val == 1:
+                st.info(f" In step 2, you need to upload the files that you want to match")
                 uploaded_files = st.file_uploader("Choose your PDF/CSV files", accept_multiple_files=True)
                 for uploaded_file in uploaded_files:
                     bytes_data = uploaded_file.read()
                     st.write("filename:", uploaded_file.name)
                     # st.write(bytes_data)
-                    st.button("Next")
-            if val == 3:
-                st.info(f" In step 4, you need to fill in your contracted free time")
+                    ## Todo
+            if val == 2:
+                st.info(f" In step 3, you need to fill in your contracted free time")
                 ## Todo
-            if val == 4:
-                st.info(f" In the final step 5, you need to click on the process button ")
-                ## Todo
-                st.button("Process")
-        # Develop the Tab 2
+                st.info("Skip this step and click on match invoice button below")
+                st.button("Match Invoice")
+        # Develop Tab 2
         "<------------------------------------------------------------------------------------------------------------>"
-        if chosen_id == '2':
+        if chosen_tab == '2':
             col1, col2, col3, col4, col5, col6, col7 = st.columns(7, gap="medium")
             with col1:
                 with st.container():
@@ -116,7 +108,7 @@ class InvoiceMatching:
                         if selected:
                             notification_box(icon='info', title='Attention',
                                              textDisplay=f"You have selected the following charges {selected}",
-                                             externalLink=None, url=None, styles=None, key='notification_box')
+                                             externalLink=None, url=None, styles=None, key='notification_box_charge_sel')
                     with col5:
                         add_vertical_space(42)
                         st.button("Save")
@@ -126,14 +118,14 @@ class InvoiceMatching:
                                      textDisplay='No Invoice ID has been selected yet. Please select an invoice ID '
                                                  'to display and edit the invoice below', externalLink=None,
                                      url=None,
-                                     styles=None, key='notification_box')
+                                     styles=None, key='notification_box_not_sel')
             else:
                 pass
-        # Develop the Tab 3
+        # Develop Tab 3
         "<------------------------------------------------------------------------------------------------------------>"
-        if chosen_id == '3':
+        if chosen_tab == '3':
             add_vertical_space(3)
-            st.markdown("<h2 style='text-align: center; color: black;'>Invoice Master Table</h2>",
+            st.markdown("<h2 style='text-align: center; color: blue;'>Invoice Master Table</h2>",
                         unsafe_allow_html=True)
             add_vertical_space(7)
             df_invoice = pd.read_csv(os.path.join(data_path, 'Invoice-Level-Info-Table.csv'))
