@@ -1,4 +1,4 @@
-### Freight Audit and Payments Platform
+### Freight Audit and Payments Platform using Gen AI
 
 ![Triakis MVP](https://github.com/karndeb/Triakis-MVP/blob/master/demo/Animation.gif)
 
