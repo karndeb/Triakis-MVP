@@ -24,3 +24,4 @@ class Home:
                  'technological innovation. By enabling business to analyze and control their '
                  'finances with ease, business can save thousands of man hours & focus on being truly '
                  'customer centric')
+

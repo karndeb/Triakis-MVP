@@ -10,6 +10,7 @@ st.set_page_config(page_title="Triakis", page_icon="assets/Favicon-Original.ico"
                                'Report a bug': "https://www.extremelycoolapp.com/bug",
                                'About': "# This is a header. This is an *extremely* cool app!"})
 
+
 st.markdown('<style>' + open('./tools/hover-style.css').read() + '</style>', unsafe_allow_html=True)
 
 
@@ -72,6 +73,10 @@ def view(model):
     if pages == model.module3:
         DisputeManagement().view(DisputeManagement.Model())
         logout_widget()
+
+    # if pages == model.module3:
+    #     DisputeManagement().view(DisputeManagement.Model())
+    #     logout_widget()
 
 
 def logout_widget():
